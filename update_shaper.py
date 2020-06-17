@@ -46,16 +46,15 @@ def get_values():
 # part 3: function to calculate shaper value  
 
 def adjust_shaper(current_shaper, current_bandwidth):
-        
+    new_shaper = -1 
+
     # TODO: calculate the min and max bandwidth and assign these to the
     # variables below
     
     # the minimum bandwidth should be 80% of the current bandwidth
-
-    min_bandwidth =
-
     # the maximum bandwidth should be 90% of the current shaper value
-        
+
+    min_bandwidth =       
     max_bandwidth = 
 
     # TODO: check the current bandwidth against the min and max values
@@ -75,7 +74,6 @@ def adjust_shaper(current_shaper, current_bandwidth):
     else:
         pass
 
-
     # TODO: call the write_new_values() function, with the new_shaper 
     # and current_bandwidth variables
 
@@ -87,16 +85,15 @@ def write_new_values(new_shaper, current_bandwidth):
         
     # TODO: complete the data to accompany the rests, including your name 
     # and the appropriate variables
-
-    data = {"studentId":"",
+    
+    payload = {"studentId":"",
             "currentBandwidth":,
             "newShaper":,
             "attemptNumber": attempts
             }
 
     # TOOD: add the appropriate endpoint in the empty quotes
-    r = requests.post(url=base_url+"", headers=header, data=json.dumps(data))
-
+    r = requests.post(url=base_url+"", headers=header, data=json.dumps(payload))
 
     # increment the number of attempts and print the response
     attempts += 1 
