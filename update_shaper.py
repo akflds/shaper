@@ -59,13 +59,13 @@ def adjust_shaper(current_shaper, current_bandwidth):
     max_bandwidth = 
 
     # TODO: check the current bandwidth against the min and max values
-    #
+    
     # if the current bandwidth is greater than the max bandwidth, 
     # increase the shaper value by 10% and save this as `new_shaper`
-    #
+    
     # if the current bandwidth is less than the minimum bandwidth, 
     # decrease the shaper value by 20% and save this as `new_shaper`
-    #
+    
     # if the shaper has any other value, ignore this
 
     if():
@@ -99,7 +99,7 @@ def write_new_values(new_shaper, current_bandwidth):
 
 
     # increment the number of attempts and print the response
-    attempts +=1 
+    attempts += 1 
     print(f'Response:\n{r.json()\n'}
 
 if __name__ == "__main__":
