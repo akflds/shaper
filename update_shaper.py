@@ -13,12 +13,12 @@ attempts = 1
 # function to retrieve current bandwidth (part 2)
 
 def get_values():
-    # this function will use the requests.get() method to retrieve current
-    # values for the bandwidth and network shaper
     
     while True:
     
-        # start by making a request 
+        # we'll use the requests.get() method to retrieve current
+        # values for the bandwidth and network shaper
+        
         # add the correct endpoint in the empty quotes
         
         r = requests.get(url=base_url+"", headers=header)
@@ -29,12 +29,13 @@ def get_values():
         current_bandwidth = 
         
         # to check if your function is working, uncomment the line below 
-        # and run the program in your terminal
-        # if you are successful it should print the values every 5s
+        # and run the program in your terminal, it should print both values every 5s
         
         # print(f'Reading values\nShaper: {current_shaper}\nBandwidth: {current_bandwidth}\n')
-        
-        ## uncomment the line below when you start Part 3
+
+        # when you are ready to start part 3, uncomment the line below and 
+        # follow the instructions in the course 
+      
         # adjust_shaper(current_shaper, current_bandwidth)
         
         time.sleep(5)
