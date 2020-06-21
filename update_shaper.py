@@ -36,16 +36,16 @@ def get_values():
         # when you are ready to start part 3, uncomment the line below and 
         # follow the instructions in the course 
       
-        # adjust_shaper(current_shaper, current_bandwidth)
+        # monitor_shaper(current_shaper, current_bandwidth)
         
         time.sleep(5)
 
 # part 3 - complete the remaining functions
 
-def adjust_shaper():
+def monitor_shaper():
     return
 
-def write_new_values():
+def adjust_shaper():
     return
 
 # start the program
