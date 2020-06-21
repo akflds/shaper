@@ -5,14 +5,14 @@ import time
 import json
 import requests
     
-# part 2: start by setting some global variables
+# start by setting some global variables
 # TODO: paste the base URL and API key in the empty quotes ("")
 
 base_url = ""
 header = {"X-Api-Key":""}
 attempts = 1
    
-# part 2: function to retrieve current bandwidth
+# function to retrieve current bandwidth (part 2)
 
 def get_values():
 
@@ -37,20 +37,19 @@ def get_values():
         
         # print(f'Reading values\nShaper: {current_shaper}\nBandwidth: {current_bandwidth}\n')
         
-        ## PART 3: uncomment the line below when you start Part 3
+        ## uncomment the line below when you start Part 3
         # adjust_shaper(current_shaper, current_bandwidth)
         
         time.sleep(5)
     
-    
-# part 3: function to calculate shaper value  
+# starter code for part 3  
 
+# function to calculate shaper value  
 def adjust_shaper(current_shaper, current_bandwidth):
     new_shaper = -1 
 
     # TODO: calculate the min and max bandwidth and assign these to the
     # variables below
-    
     # the minimum bandwidth should be 80% of the current bandwidth
     # the maximum bandwidth should be 90% of the current shaper value
 
@@ -61,25 +60,19 @@ def adjust_shaper(current_shaper, current_bandwidth):
     
     # if the current bandwidth is greater than the max bandwidth, 
     # increase the shaper value by 10% and save this as `new_shaper`
-    
+   
     # if the current bandwidth is less than the minimum bandwidth, 
     # decrease the shaper value by 20% and save this as `new_shaper`
     
     # if the shaper has any other value, ignore this
 
-    if():
+   
 
-    elseif():
+    # TODO: finally, call the write_new_values() function, with 
+    # the new_shaper and current_bandwidth variables
 
-    else:
-        pass
-
-    # TODO: call the write_new_values() function, with the new_shaper 
-    # and current_bandwidth variables
-
-
-# part 3: function to send new values to the API and print the response
-
+    
+# function to send new values to the API and print the response
 def write_new_values(new_shaper, current_bandwidth):
     global attempts
         
